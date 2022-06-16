@@ -1,0 +1,58 @@
+{
+  "name" : "frdl/auth",
+  "description": "Some auth related packages...",	  
+  "license": ["MIT"],	 
+  "homepage": "https://webfan.de/install/",
+  "authors":[
+	  {
+	    "name" : "Till Wehowski",
+	    "email" : "software@frdl.de"
+	  }
+	  ],
+   
+"scripts": {
+ 
+},
+"extra" : {
+	 "compile-mode": "all",
+	 "webfan" : {
+		 "install" : {
+		     
+		 }
+	 }, 
+   "downloads": {
+      "*": {
+        "path": "./../../../modules/{$id}",
+        "ignore": ["test", "tests", "doc", "docs", ".*"]
+      }
+
+    }
+},
+"minimum-stability":"dev",
+    "config": { 
+        "preferred-install": "auto",
+        "cache-files-ttl": 3600,
+        "prepend-autoloader": true
+    },  
+	 "require-dev" : {		 
+
+	 },
+  "require" : {
+    	"php": ">=8.0",
+      "league/oauth2-client": "*",
+      "league/oauth2-server" : "*",
+      "hybridauth/hybridauth" : "*",
+      "delight-im/auth" : "*"
+  },	  
+  "autoload": {
+    "classmap" : ["src/"],
+    "psr-4": {
+
+     }
+  },
+  "suggest" : {
+     "frdl/codebase" : "Frdlweb Codebase Server",
+     "frdl/project" : "Frdlweb project template",
+     "webfan3/website" : "Default Start/Installer Template"
+  }
+}
