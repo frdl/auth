@@ -45,7 +45,7 @@
       "delight-im/auth" : "*"
   },	  
   "autoload": {
-    "classmap" : ["src/"],
+     
     "psr-4": {
 
      }
