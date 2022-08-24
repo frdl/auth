@@ -38,11 +38,12 @@
 
 	 },
   "require" : {
-    	"php": ">=8.0",
+      "php": ">=7.1 | >=8.0",
       "league/oauth2-client": "*",
       "league/oauth2-server" : "*",
       "hybridauth/hybridauth" : "*",
-      "delight-im/auth" : "*"
+      "delight-im/auth" : "*",
+      "nette/security"  : "*"
   },	  
   "autoload": {
      
